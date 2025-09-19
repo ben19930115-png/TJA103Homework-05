@@ -9,8 +9,6 @@ public class Test4Numbers {
       System.out.print(i + " ");
       }
       
-      System.out.println();
-      System.out.print("\n");
       
       for (int i = 0; i <= 100; i += 4) {
     	  System.out.print(i + " ");
