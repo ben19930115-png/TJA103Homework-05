@@ -27,20 +27,38 @@
 //}
 
 // 3.請設計一隻Java程式，計算1～10的連乘積(1*2*3*…*10) (用while迴圈)
+//package hw;
+//
+//public class hw2 {
+//	public static void main(String[] args) {  
+//		int i = 1 ;
+//		int sum = 1 ;
+//	      while (i <= 10) {
+//	    	  sum *= i;
+//	          i++;
+//	      }
+//	    	  System.out.print("1～10的連乘積 = " + sum);
+//		}
+//}
+
+/* 4.請設計一隻Java程式，輸出結果為以下：
+1 4 9 16 25 36 49 64 81 100 */
+
 package hw;
 
 public class hw2 {
-	public static void main(String[] args) {  
-		int i = 1 ;
-		int sum = 1 ;
-	      while (i <= 10) {
-	    	  sum *= i;
-	          i++;
+	public static void main(String[] args) {
+		int sum = 3;
+	      for (int i = 1; i <= 100; i += sum) {
+	          if (sum % 3 == 0) 
+			
+	      System.out.print(i + " ");
 	      }
-	    	  System.out.print("1～10的連乘積 = " + sum);
+	      
+	      System.out.println();
+ 
 		}
 }
-
 
 
 
