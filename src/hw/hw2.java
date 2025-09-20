@@ -64,14 +64,20 @@
 package hw;
 
 public class hw2 {
+
 	public static void main(String[] args) {
-		int sum = 0;   
-	      for (int i = 1; i <= 49; i++) {
-	    	 if(sum <= 49)
-	    		 sum++ ;
-	      System.out.print(sum +  " ");  
-	      }
+		int count = 0;
+		
+		for (int i = 1 ; i <= 49; i++) {
+			// 若個位數或十位數有 4 則略過 
+			if(i % 10 == 4 || i / 10 == 4) continue;
+			System.out.print(i + "\t");
+			count++;
+			if (count % 10 == 0 ) 
+			System.out.println();			
 		}
+			System.out.println("\n" + "阿文可以選擇的數字共有" + count + "個");
+	}
 }
 
 
