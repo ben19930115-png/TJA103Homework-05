@@ -48,17 +48,17 @@ package hw;
 
 public class hw2 {
 	public static void main(String[] args) {
-		int sum = 1;
-	      for (int i = 1; i <= 100; i += 3) {
-	    	  if(sum %2 != 0)
-	        	sum += i;  
-			
-	      System.out.print(i + " ");
+		int sum = 0;   // 用來累加
+		int  j =  1;   // 從第一個奇數開始
+	      for (int i = 1; i <= 10; i++) {
+	    	 sum += j; // 把奇數加進去
+	      System.out.print(sum +  " ");
+	      	 j += 2;   // 下一個奇數
 	      }
-	      
-	      System.out.println();
- 
 		}
 }
+
+/* 5.阿文很熱衷大樂透(1 ～49)，但他不喜歡有4的數字，不論是個位數或是十位數。請設計一隻程式，
+輸出結果為阿文可以選擇的數字有哪些？總共有幾個？*/
 
 

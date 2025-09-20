@@ -1,6 +1,7 @@
 package hw;
 
 public class Animal {
+	
 	private int age;
 	private float weight;
 	
@@ -11,21 +12,20 @@ public class Animal {
 	public void speak() {
 		System.out.println("Age is " + age);
 		System.out.println("Weight is " + weight);
-		
 	}
-//	public void setage(int ageXXX) {
-//		age = ageXXX;
-//	}
-//
-//	
-//	public double getweight() {
-//		return weight;
-//	}
-//	public void setage(float weightXXX) {
-//		if(weightXXX > 0)
-//			weight = weightXXX;
-//		else
-//			System.out.println("請確認售價設定");
-//	}
+	
+	public int getage() {
+		return age;
+	}
+	public void setage(int age)  {
+		this.age = age;
+	}	
+	public float getweight() {
+		return weight;
+	}
+	public void setweight(float weight) {
+		this.weight = weight;
+	}
+
 
 }
