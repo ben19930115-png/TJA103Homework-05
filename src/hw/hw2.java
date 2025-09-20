@@ -106,6 +106,27 @@
 //	
 //}
 
+/* 7.請設計一隻Java程式，輸出結果為以下：
+A
+BB
+CCC
+DDDD
+EEEEE
+FFFFFF
+*/
+package hw;
 
+public class hw2 {
+
+	public static void main(String[] args) {
+		for (char i = 65; i <= 70; i++) {
+			for (int j = 65; j <= i; j++) {
+				System.out.print(i);
+			}
+			System.out.println();
+		}
+	}
+	
+}
 
 
