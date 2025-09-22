@@ -51,6 +51,9 @@ public class Animal {
 }
 
 	public Animal() {
+		//1. 上子類別的建構子super()給Java或是相關看的資料
+		//2. 這也是 Java Bean 規範之一
+		//3. 給日後搭配的框架使用 (框架會呼叫此建構子幫我們產生建構)
 	}
 
 	public void display() {
