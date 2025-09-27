@@ -1,5 +1,7 @@
 package hw;
 
+import java.util.List;
+
 /*請設計一隻程式，使用者輸入三個數字後，輸出結果會為正三角形、等腰
 三角形、其它三角形或不是三角形，如圖示結果：*/
 //import java.util.Scanner;
@@ -120,29 +122,53 @@ package hw;
 //	}
 //}
 
-進階挑戰：輸入不要的數字後，直接亂數印出6個號碼且不得重複
-import java.util.Scanner;
+//進階挑戰：輸入不要的數字後，直接亂數印出6個號碼且不得重複
+
+import java.util.*;
 
 public class hw3 {
-
+	static boolean contains(int n, int d) {
+		while (n > 0) {
+			if (n % 10 == d) return true;
+			n /= 10;
+		}
+		return false;
+	}	
 	public static void main(String[] args) {
 		Scanner x = new Scanner(System.in);
-		int count = 0;
+		int a;
+		while (true) {
 			System.out.print("請輸入不想選的數字(1~9): ");
-			int a = x.nextInt();
-			
-		for (int i = 1 ; i <= 49; i++) {
-			
-			if(i % 10 == a || i / 10 == a) continue;
-			System.out.print(i + "\t");
-			count++;
-			if (count % 10 == 0 ) 
-			System.out.println();			
+			a = x.nextInt();
+			if (a >= 1 && a <= 9) break;
+			System.out.print("請輸入不想選的數字(1~9):! ");
 		}
-			System.out.println("\n" + "阿文可以選擇的數字共有" + count + "個");
+		List<Integer> pool = new ArrayList<>();
+		for (int i = 1 ; i <= 49; i++) {			
+			if(!contains(i, a)) {
+				pool.add(i);
+			}
+		}
+		System.out.print("\n陣列");
+		int perRow = 7, cnt = 0;
+		for (int i = 0; i < pool.size(); i++) {
+			cnt++;
+			if (cnt % perRow == 0) System.out.println(); 
+			else System.out.print("\t");			
+		}
+		if (cnt % perRow != 0) System.out.println();
+		System.out.println("阿文可以選擇的數字共有" + pool.size() + "個" );
+		if (pool.size() >= 6) {
+				Collections.(pool);
+				List<Integer> y = new ArrayList<>(pool.subList(0, 6));
+				Collections.sort(y);
+				System.out.println("隨機選六個(不重複數字) :" + y );
+		}else {
+			System.out.println("可選數字不足六個" );
+		}
+		x.close();
 	}
 }
-
 
 /*4.透過Math類別的靜態方法random()，可以自動產生隨機的數字
 用法參考如圖所示：*/
