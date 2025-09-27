@@ -67,29 +67,54 @@ package hw;
 //	}			
 //}
 
+//import java.util.Scanner;
+//
+//public class hw3 {
+//	public static void main(String[] args) {
+//
+//		Scanner scanner = new Scanner(System.in);
+//		int answer = (int)(Math.random() * 100);
+//		int guess;
+//		
+//		System.out.println("猜數字0 ~ 101");
+//		
+//		while (true) {
+//			guess = scanner.nextInt();
+//			if (guess > answer) {
+//				System.out.println("太大了猜小一點");
+//			} else if (guess < answer){
+//				System.out.println("太小了猜大一點");		
+//			}else {
+//				System.out.println("答對了");
+//				break;
+//			}
+//		}
+//		scanner.close();
+//	}			
+//}
+
+/* 阿文很喜歡簽大樂透(1～49)，但他是個善變的人，上次討厭數字是4，但這次他想要依心情決定討
+厭哪個數字，請您設計一隻程式，讓阿文可以輸入他不想要的數字(1～9)，畫面會顯示他可以選擇
+的號碼與總數，如圖： */
+
 import java.util.Scanner;
 
 public class hw3 {
+
 	public static void main(String[] args) {
-
-		Scanner scanner = new Scanner(System.in);
-		int answer = (int)(Math.random() * 100);
-		int guess;
-		
-		System.out.println("猜數字0 ~ 101");
-		
-		while (true) {
-			guess = scanner.nextInt();
-			if (guess > answer) {
-				System.out.println("太大了猜小一點");
-			} else if (guess < answer){
-				System.out.println("太小了猜大一點");		
-			}else {
-				System.out.println("答對了");
-				break;
-			}
+		Scanner x = new Scanner(System.in);
+		int count = 0;
+			System.out.print("請輸入不想選的數字(1~9): ");
+			int a = x.nextInt();
+			
+		for (int i = 1 ; i <= 49; i++) {
+			// 若個位數或十位數有 4 則略過 
+			if(i % 10 == a || i / 10 == a) continue;
+			System.out.print(i + "\t");
+			count++;
+			if (count % 10 == 0 ) 
+			System.out.println();			
 		}
-		scanner.close();
-	}			
+			System.out.println("\n" + "阿文可以選擇的數字共有" + count + "個");
+	}
 }
-
