@@ -41,7 +41,7 @@ package hw;
 //        sc.close();
 //    }
 //}
-/*請設計一隻程式，會亂數產生一個0～9的數字，然後可以玩猜數字遊戲，猜錯會顯示錯誤訊息，猜
+/*2.請設計一隻程式，會亂數產生一個0～9的數字，然後可以玩猜數字遊戲，猜錯會顯示錯誤訊息，猜
 對則顯示正確訊息，如圖示結果：*/
 //import java.util.Scanner;
 //
@@ -67,6 +67,7 @@ package hw;
 //	}			
 //}
 
+//進階功能：產生0～100亂數，每次猜就會提示你是大於還是小於正確答案
 //import java.util.Scanner;
 //
 //public class hw3 {
@@ -93,10 +94,33 @@ package hw;
 //	}			
 //}
 
-/* 阿文很喜歡簽大樂透(1～49)，但他是個善變的人，上次討厭數字是4，但這次他想要依心情決定討
+/* 3.阿文很喜歡簽大樂透(1～49)，但他是個善變的人，上次討厭數字是4，但這次他想要依心情決定討
 厭哪個數字，請您設計一隻程式，讓阿文可以輸入他不想要的數字(1～9)，畫面會顯示他可以選擇
 的號碼與總數，如圖： */
 
+//import java.util.Scanner;
+//
+//public class hw3 {
+//
+//	public static void main(String[] args) {
+//		Scanner x = new Scanner(System.in);
+//		int count = 0;
+//			System.out.print("請輸入不想選的數字(1~9): ");
+//			int a = x.nextInt();
+//			
+//		for (int i = 1 ; i <= 49; i++) {
+//			
+//			if(i % 10 == a || i / 10 == a) continue;
+//			System.out.print(i + "\t");
+//			count++;
+//			if (count % 10 == 0 ) 
+//			System.out.println();			
+//		}
+//			System.out.println("\n" + "阿文可以選擇的數字共有" + count + "個");
+//	}
+//}
+
+進階挑戰：輸入不要的數字後，直接亂數印出6個號碼且不得重複
 import java.util.Scanner;
 
 public class hw3 {
@@ -108,7 +132,7 @@ public class hw3 {
 			int a = x.nextInt();
 			
 		for (int i = 1 ; i <= 49; i++) {
-			// 若個位數或十位數有 4 則略過 
+			
 			if(i % 10 == a || i / 10 == a) continue;
 			System.out.print(i + "\t");
 			count++;
@@ -118,3 +142,11 @@ public class hw3 {
 			System.out.println("\n" + "阿文可以選擇的數字共有" + count + "個");
 	}
 }
+
+
+/*4.透過Math類別的靜態方法random()，可以自動產生隨機的數字
+用法參考如圖所示：*/
+
+
+
+
