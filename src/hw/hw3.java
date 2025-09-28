@@ -105,10 +105,10 @@ import java.util.List;
 //public class hw3 {
 //
 //	public static void main(String[] args) {
-//		Scanner x = new Scanner(System.in);
+//		Scanner sc = new Scanner(System.in);
 //		int count = 0;
 //			System.out.print("請輸入不想選的數字(1~9): ");
-//			int a = x.nextInt();
+//			int a = sc.nextInt();
 //			
 //		for (int i = 1 ; i <= 49; i++) {
 //			
@@ -169,6 +169,7 @@ import java.util.List;
 //		x.close();
 //	}
 //}
+
 
 
 
