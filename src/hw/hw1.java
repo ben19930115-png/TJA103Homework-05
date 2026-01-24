@@ -18,7 +18,7 @@ package hw;
 
 // 2.請設計一隻Java程式，計算200顆蛋共是幾打幾顆？(一打為12顆)
 
-//public class h1 {
+//public class hw1 {
 //	public static void  main(String[] args) {
 //		
 //		int i = 200;
@@ -33,7 +33,7 @@ package hw;
 
 // 3.請由程式算出256559秒為多少天、多少小時、多少分與多少秒
 
-//public class h1 {
+//public class hw1 {
 //public static void  main(String[] args) {
 //	
 //	float s = 256559;
@@ -51,7 +51,7 @@ package hw;
 
 // 4.請定義一個常數為3.1415(圓周率)，並計算半徑為5的圓面積與圓周長
 //圓形面積
-//public class h1 {
+//public class hw1 {
 //
 //	// 圓形面積
 //	public static double areaMeasure(double radius) {
@@ -71,7 +71,7 @@ package hw;
 //5.某人在銀行存入150萬，銀行利率為2%，如果每年利息都繼續存入銀行，請用程式計算10年後，本
 //金加利息共有多少錢 (用複利計算，公式請自行google)
 
-//public class h1{
+//public class hw1{
 //	public static void main(String args[]){
 //		double i = 1500000;
 //		double j = 0.02;
@@ -83,7 +83,7 @@ package hw;
 //}
 
 
-//public class h1 {
+//public class hw1 {
 //
 //
 //	// 梯形面積
@@ -104,7 +104,7 @@ package hw;
 5 + “5”
 並請用註解各別說明答案的產生原因
 */
-//public class h1 {
+//public class hw1 {
 //public static void  main(String[] args) {
 //	
 //	System.out.println(5 + 5);   // 產生結果為"數字" + "數字"，因此為 5 + 5 = 10

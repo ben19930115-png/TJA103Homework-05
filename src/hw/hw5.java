@@ -35,28 +35,64 @@ package hw;
 //}
 
 //請設計一個方法為randAvg()，從10個0～100(含100)的整數亂數中取平均值並印出這10個亂數與平均值，如圖：
-import java.util.concurrent.ThreadLocalRandom;	
+//import java.util.concurrent.ThreadLocalRandom;	
+//
+//public class hw5{
+//
+//	public static void main(String[] args) {
+//		System.out.println("亂數結果");
+//		int avg = randAvg();
+//		System.out.println(avg);
+//	}
+//		
+//static int randAvg() {
+//	int sum = 0;
+//	for(int i = 0; i < 10; i++) {
+//	    int j = ThreadLocalRandom.current().nextInt(0, 100);
+//	    if (i > 0) 
+//	    System.out.println(j);
+//	    sum += j;
+//	}
+//	System.out.println();
+//	return sum;
+//}
+//
+//}
 
-public class hw5{
+/*利用Overloading，設計兩個方法int maxElement(int x[][])與double maxElement(double x[][])，
+可以找出二維陣列的最大值並回傳，如圖：*/
 
-	public static void main(String[] args) {
-		System.out.println("亂數結果");
-		int avg = randAvg();
-		System.out.println(avg);
-	}
-		
-static int randAvg() {
-	int sum = 0;
-	for(int i = 0; i < 10; i++) {
-	    int j = ThreadLocalRandom.current().nextInt(0, 100);
-	    if (i > 0) 
-	    System.out.println(j);
-	    sum += j;
-	}
-	System.out.println();
-	return sum;
-}
+//public class hw5{
+//	public static void main(String[] args) {
+//		int[][] intArray = {
+//				{1, 6, 3},
+//				{9, 5, 2}
+//		};
+//		double[][] doubleArray = {
+//				{1.2, 3.5, 2.2},
+//				{7.4, 2.1, 8.2}
+//		};
+//		hw5 w = new hw5();
+//		
+//		System.out.println(w.maxElement(intArray));
+//		System.out.println(w.maxElement(doubleArray));
+//	}
+//}
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
