@@ -10,9 +10,9 @@ public class hw4 {
 			sum += intArray[i];
 		}
 		double avg = (double) sum/intArray.length;
-		System.out.println("總合為平均值" + avg);
+		System.out.println("元素總合的平均值" + avg);
 				
-		System.out.print("大於總合為平均值");
+		System.out.print("其中大於平均值的元素");
 		for(int i = 0; i < intArray.length; i++) {
 			if(intArray[i] > avg ) {
 				System.out.print(intArray[i] + " ");
