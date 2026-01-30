@@ -10,9 +10,18 @@
 //	    	  System.out.print("1～1000的偶數和 = " + sum);
 //		}
 //}
+package hw;
 
+public class hw2 {
+	public static void main(String[] args) {  
+		int sum = 0;
+		for (int i = 1; i <= 1000; i += 2) {
+		sum += i;
+	}
+	System.out.println("奇數1加到1000 = " + sum );
+}
 
-
+}
 // 2.請設計一隻Java程式，計算1～10的連乘積(1*2*3*…*10) (用for迴圈)
 //package hw;
 //
@@ -92,19 +101,19 @@
 1 2 
 1
 */
-package hw;
-public class hw2{
-
-	public static void main(String[] args) {
-		for (int i = 10; i >= 1; i--) {
-			for (int j = 1; j <= i; j++) {
-				System.out.print(j + " ");
-			}
-			System.out.println();
-		}
-	}
-	
-}
+//package hw;
+//public class hw2{
+//
+//	public static void main(String[] args) {
+//		for (int i = 10; i >= 1; i--) {
+//			for (int j = 1; j <= i; j++) {
+//				System.out.print(j + " ");
+//			}
+//			System.out.println();
+//		}
+//	}
+//	
+//}
 
 /* 7.請設計一隻Java程式，輸出結果為以下：
 A

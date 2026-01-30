@@ -1,5 +1,22 @@
 package hw;
 
 public class hw4 {
-
+	public static void main(String[] arg) {
+		int[] intArray = {29,100,39,41,50,8,66,77,95,15};
+		
+		int sum = 0;
+		
+		for(int i = 0;i < intArray.length; i++) {
+			sum += intArray[i];
+		}
+		double avg = (double) sum/intArray.length;
+		System.out.println("總合為平均值" + avg);
+				
+		System.out.print("大於總合為平均值");
+		for(int i = 0; i < intArray.length; i++) {
+			if(intArray[i] > avg ) {
+				System.out.print(intArray[i] + " ");
+			}
+		}
+	}
 }
